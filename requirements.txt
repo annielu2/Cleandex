@@ -1,0 +1,8 @@
+streamlit
+pandas
+requests
+fastapi
+uvicorn
+pandas
+ydata-profiling
+python-multipart

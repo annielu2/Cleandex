@@ -1,0 +1,66 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# VSCode
+.vscode/
+
+# Jupyter notebooks (se usar)
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.tar
+*.sock
+
+# Python Poetry (caso esteja usando)
+poetry.lock
+
+# Requirements cache
+pip-log.txt
+
+# Streamlit
+.streamlit/
+
+# Test coverage reports
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+.cache
+nosetests.xml
+pytest_cache/
+.pytest_cache/
+
+# Docker-compose override
+docker-compose.override.yml
+
+# dist e build
+dist/
+build/
+*.egg-info/
+
+# Ignore requirements se forem gerados automaticamente (opcional)
+# requirements.txt
+
+# Ignore frontend build (se houver)
+frontend/node_modules/
+frontend/build/
