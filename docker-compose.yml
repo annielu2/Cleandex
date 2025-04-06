@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.9"
 
 services:
   backend:
@@ -8,9 +8,8 @@ services:
     ports:
       - "8503:8503"
     volumes:
-      - ./backend/reports:/app/reports
-    networks:
-      - cleandex-net
+      - ./backend:/app
+    restart: always
 
   frontend:
     build:
@@ -18,10 +17,6 @@ services:
       dockerfile: frontend/Dockerfile
     ports:
       - "8501:8501"
-    depends_on:
-      - backend
-    networks:
-      - cleandex-net
-
-networks:
-  cleandex-net:
+    volumes:
+      - ./frontend:/app
+    restart: always
